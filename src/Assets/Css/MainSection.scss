@@ -1,0 +1,601 @@
+@import '/Users/kavyaarora/Desktop/Task1/first/src/Assets/Css/variables.scss';
+
+
+html, body {
+    overflow-x: hidden;
+  }
+
+.main-section {
+    background-size: cover;
+    background-position: center;
+    height: auto;  
+    padding-bottom: 50px;
+    position: relative;
+
+    .slick-slide {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .slide-content {
+      width: 100%;
+      min-height: 605px;  
+      position: relative;
+      background-image: url('../Image/main-image.png'); 
+      background-size: cover;
+      background-position: center;
+
+      .content-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        color: #4B4A9F;
+
+        h1 {
+          font-size: 48px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+
+        .shop-now-btn {
+          background-color: #2C2E3A;
+          color: white;
+          width: 303px;
+          height: 48px;
+          border: none;
+          cursor: pointer;
+          font-size: 15px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+
+          &:hover {
+            .btn-content {
+              transform: scale(0.9);
+              color: $highlight-color;
+            }
+
+            .social-icon {
+              color: $highlight-color;
+            }
+          }
+
+          .btn-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s ease;
+          }
+
+          .social-icon {
+            font-size: 14px;
+            color: white;
+            transition: color 0.3s ease;
+          }
+        }
+      }
+    }
+
+    /* New Launched Section Styling */
+    .new-launched-section {
+        margin-top: 90px;
+      
+        .heading-container {
+          margin-bottom: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      
+          .decor-icon {
+            display: inline-block;
+            width: 40px; 
+            height: auto;
+            margin: 0 15px;
+          }
+      
+          .section-heading {
+            font-size: 28px;
+            color: black;
+          }
+        }
+      
+        .image-container {
+          height: 326px;
+          position: relative;
+          width: 1364px;
+          margin: 0 auto;
+          
+          .content-overlay {
+            position: absolute;
+            top: 69%;
+            left: 10%;
+      
+            .shop-now-btn {
+              background-color: white;
+              color: black;
+              padding: 10px 30px;
+              border: 1px solid black;
+              cursor: pointer;
+              font-size: 20px;
+              border-radius: 20%;
+              font-style: Montserrat;
+      
+              &:hover {
+                background-color: $highlight-color;
+              }
+            }
+          }
+        }
+      }
+
+    /* Discover Haircare Section Styling */
+    .discover-haircare-section {
+      margin-top: 117px;
+
+      .heading-container {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .decor-icon {
+          display: inline-block;
+          width: 40px;
+          height: auto;
+          margin: 0 15px;
+        }
+
+        .section-heading {
+          font-size: 28px;
+          color: black;
+        }
+      }
+
+      .products-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .product-card {
+          text-align: center;
+          width: 250px;  
+          height: 350px; 
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end; /* Ensures equal space between elements */
+          align-items: center;
+
+          img { 
+            object-fit: contain; /* Keeps aspect ratio intact */
+            margin-bottom: 15px;
+          }
+
+          h4 {
+            font-size: 20px;
+            color: black;
+            font-weight: 200;
+            margin-bottom: 15px;
+          }
+
+          h3 {
+            font-size: 18px;
+            color: black;
+            margin-bottom: 5px;
+          }
+
+          p {
+            font-size: 16px;
+            color: #555;
+          }
+        }
+      }
+    }
+
+    /* two image Section Styling */
+    .two-image-section {
+        .two-images-container {
+          display: flex;
+          justify-content: space-between; /* Ensure the images have space between them */
+          margin: 50px auto; /* To center the container and add space above and below */
+          max-width: 1400px; /* Set a maximum width for the container */
+          gap: 20px; /* Add a gap between the images */
+          padding: 20px; /* Add some padding for white space inside the container */
+          background-color: #fff; /* Optional: Add a background color for the white space effect */
+      
+          img {
+            width: 670px; /* Both images will take 49% of the container width */
+            object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+            height: 317px; /* Set the same height for both images */
+            object-fit: contain;
+          }
+        }
+      }
+
+      /* commix-iconics-section*/
+
+      .commix-iconics-section {
+        margin-top: 112px;
+        text-align: center;
+    
+        .heading-container {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .decor-icon {
+                display: inline-block;
+                width: 40px;
+                height: auto;
+                margin: 0 15px;
+            }
+    
+            .section-heading {
+                font-size: 32px;
+                color: black;
+                display: inline-block;
+            }
+        }
+    
+        .slick-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s ease; /* Smooth slide transition */
+        }
+    
+        .product-card {
+            width: 300px;  /* All cards have equal width */
+            text-align: center;
+            transition: transform 0.5s ease;
+            margin: 0 15px; /* Add margin between slides for proper spacing */
+    
+            img {
+                width: 100%; /* Image fills the product card */
+                height: 450px;
+                object-fit: cover;
+            }
+    
+            h4, h3, p {
+                margin: 10px 0;
+                color: #333;
+            }
+    
+            /* For left and right (non-center) slides */
+            &:not(.slick-center) {
+                transform: scale(0.8); /* Smaller size for non-center slides */
+            }
+        }
+    
+        /* This ensures the center slide enlarges */
+        .slick-center .product-card {
+            transform: scale(1.1); /* Larger size for the center slide */
+            opacity: 1; /* Full opacity for the center slide */
+            z-index: 1; /* Bring it to the front */
+        }
+    }
+    
+    
+    
+
+    /* bottle image section */
+
+    .full-width-image-section{
+        margin-top: 116px;
+        width: 100px;
+        height: 815px;
+    }
+
+    .full-width-image{
+        width: 1440px;
+        height: 815px;
+        object-fit: cover;
+    }
+
+    /* Exclusive Festive Combos Section */
+
+    .exclusive-festive-combos-section {
+        margin-top: 75px;
+    
+        /* Heading Styling */
+        .heading-container {
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .decor-icon {
+                display: inline-block;
+                width: 40px;
+                height: auto;
+                margin: 0 15px;
+            }
+    
+            .section-heading {
+                font-size: px;
+                color: black;
+                display: inline-block;
+            }
+        }
+    
+        /* Image Container Styling */
+        .combo-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+    
+            .combo-image {
+                width: 1203px;
+                height: 311px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    /* offer Section Styling */
+
+    .offer-section{
+        width: 100%;
+        margin-top: 121px;
+        display: flex;
+        justify-content: center;
+
+        .offer-image-container{
+            position: relative;
+            width: 1714px; /* Set the width based on your design */
+            height: 649px;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+
+            .offer-image{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .shop-now-btn{
+                position: absolute;
+                top: 65%;
+                left: 52%;
+                padding: 8px;
+                background-color: black;
+                color: white;
+                font-size: 18px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $highlight-color;
+                }
+            }
+        }
+    }
+
+    .featured-section {
+        margin-top: 117px;
+        text-align: center;
+      
+        .heading-container {
+          margin-bottom: 66px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      
+          .decor-icon {
+            width: 40px;
+            height: auto;
+            margin: 0 15px;
+          }
+      
+          .section-heading {
+            font-size: 28px;
+            color: black;
+            display: inline-block;
+          }
+        }
+      
+        .image-grid {
+          display: flex;
+          justify-content: space-between; /* Space between the images */
+          max-width: 1350px; /* Set a max width for the grid */
+          margin: 0 auto; /* Center the grid on the page */
+          gap: 30px; /* Increase the gap between the divs to add spacing */
+      
+          .product-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            background-color: white;
+      
+            .product-image {
+              width: 671px;
+              height: 584px;
+              object-fit: cover;
+            }
+      
+            .product-text {
+              margin-top: 10px;
+              text-align: left;
+      
+              h3 {
+                font-size: 18px;
+              }
+      
+              p {
+                font-size: 16px;
+              }
+      
+              .shop-now-btn {
+                padding: 10px 20px;
+                background-color: #2C2E3A;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 15px;
+                text-transform: uppercase;
+      
+                &:hover {
+                  background-color: $highlight-color;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .blog-section {
+        margin-top: 100px;
+        text-align: center;
+      
+        .heading-container {
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      
+          .decor-icon {
+            width: 40px;
+            height: auto;
+            margin: 0 15px;
+          }
+      
+          .section-heading {
+            font-size: 28px;
+            color: black;
+          }
+        }
+      
+        .section-description {
+          font-size: 16px;
+          color: #777;
+          margin-bottom: 50px;
+        }
+      
+        .blog-grid {
+          display: flex;
+          justify-content: space-between;
+          max-width: 1300px;
+          margin: 0 auto;
+          gap: 20px; /* Add spacing between the divs */
+      
+          .blog-post {
+            width: 320px;
+            height: 397px; /* Adjust width to ensure both divs fit in one row */
+            text-align: left;
+            border: 1px solid black;
+            padding: 19px;
+      
+            .blog-image {
+              width: 100%;
+              height: auto;
+            }
+      
+            .blog-text {
+              padding: 15px;
+      
+              p {
+                font-size: 14px;
+                color: #999;
+              }
+      
+              h3 {
+                font-size: 18px;
+                color: black;
+              }
+            }
+          }
+        }
+      
+        .see-all-button-container {
+          margin-top: 75px;
+          text-align: center;
+      
+          .see-all-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            width: 303px;
+            height: 50px;
+      
+            &:hover {
+              background-color: $highlight-color;
+            }
+          }
+        }
+      }
+
+      .subscribe-section{
+          margin-top: 150px;
+          text-align: center;
+
+          .heading-container{
+              margin-bottom: 0px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .decor-icon{
+                  width: 40px;
+                  height: auto;
+              }
+
+              .section-heading {
+                font-size: 28px;
+                color: black;
+              }
+          }
+
+          .section-description{
+              font-size: 16px;
+              color: #777;
+              margin-bottom: 20px;
+          }
+
+          .subscribe-form{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .email-input{
+                  width: 581px;
+                  height: 45px;
+                  border: 1px solid black;
+                  border-top-left-radius: 5%;
+                  border-bottom-left-radius: 5%;
+                  padding-left: 15px;
+              }
+
+              .subscribe-button{
+                  width: 133px;
+                  height: 45px;
+                  background-color: black;
+                  color: white;
+                  font-size: 14px;
+                  cursor: pointer;
+                  font: Montserrat;
+
+                  &:hover{
+                      background-color: $highlight-color;
+                  }
+              }
+          }
+      }
+}
