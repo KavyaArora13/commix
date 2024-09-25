@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Users/kavyaarora/Desktop/Task1/first/src/Assets/Css/Banner.scss'; // Import the SCSS file specific to Banner
+import '../../Assets/Css/ProductPage/Banner.scss';
 
 const Banner = () => {
     return (
