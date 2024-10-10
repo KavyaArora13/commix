@@ -1,0 +1,22 @@
+.owner-showcase {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 150px; 
+  }
+  
+  .owner-image {
+    width: 100%;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }

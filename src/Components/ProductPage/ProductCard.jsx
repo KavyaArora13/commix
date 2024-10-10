@@ -29,7 +29,7 @@ const ProductCard = ({ product }) => {
           className="card-img-top no-outline" // Add class to remove outline on image
           style={{ height: '302px', objectFit: 'cover' }} // Adjust height and image style
         />
-        <div className="card-body p-4">
+        <div className="card-body">
           {/* Category and rating section */}
           <div className="card-category-rating">
             <p>{product.category}</p>

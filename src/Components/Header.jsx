@@ -37,8 +37,8 @@ const Header = () => {
 
   const navLinks = [
     { 
-      name: 'LIPS', 
-      link: '/lips',
+      name: 'SKINCARE', 
+      link: '/product',
       dropdown: [
         {
           title: 'LIPSTICKS',
@@ -70,15 +70,11 @@ const Header = () => {
         }
       ]
     },
-    { name: 'EYES', link: '/eyes' },
-    { name: 'FACE', link: '/face' },
-    { name: 'NAILS', link: '/nails' },
-    { name: 'SKINCARE', link: '/skincare' },
-    { name: 'ACCESSORIES', link: '/accessories' },
-    { name: 'GIFTING', link: '/gifting' },
+    { name: 'HAIRCARE', link: '/product' },
+    { name: 'BODYCARE', link: '/product' },
+    { name: 'ORALCARE', link: '/product' },
     { name: 'BESTSELLERS', link: '/bestsellers' },
-    { name: 'NEW LAUNCHES', link: '/newlaunches' },
-    { name: 'OFFERS', link: '/offers' },
+    { name: 'OFFERS', link: '/offer' },
     { name: 'BLOG', link: '/blog' }
   ];
 
@@ -95,10 +91,10 @@ const Header = () => {
 
         <div className="search-bar-container">
           <input className="search-bar" type="text" placeholder="Try Liquid Lipstick" />
-          <button className="search-button">
-            <SocialIcon icon={faSearch} link="#"/>
+          <Link to="/search" className="search-button">
+            <SocialIcon icon={faSearch} className="search-icon"/>
             <span className="search-text">Search</span>
-          </button>
+          </Link>
         </div>
 
         <div className="header-icons">

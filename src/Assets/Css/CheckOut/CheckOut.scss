@@ -1,0 +1,111 @@
+.checkout-page {
+  .container-fluid {
+    padding-top: 5rem; // 80px from top
+
+    .checkout-header {
+      padding-left: 15px; // Default padding for all screen sizes
+      margin-bottom: 2rem;
+
+      @media (min-width: 576px) {
+        padding-left: 1rem; // Slightly more padding for small screens and up
+      }
+
+      @media (min-width: 768px) {
+        padding-left: 1rem; // Slightly more padding for medium screens and up
+      }
+
+      @media (min-width: 1200px) {
+        padding-left: 3rem; // More padding for large screens, aligning with PersonalInfoForm
+      }
+    }
+
+    .checkout-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .continue-shopping-link {
+      color: #000000;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &::before {
+        content: '←';
+        margin-right: 0.5rem;
+      }
+    }
+
+    .checkout-summary {
+      margin-bottom: 20px;
+
+      .checkout-summary-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .checkout-summary-title,
+      .checkout-summary-total {
+        font-size: 17px;
+      }
+
+      .checkout-product-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+}
+
+.payment-options {
+  padding: 20px;
+
+  .payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    .payment-logo-container {
+      display: flex;
+      align-items: center;
+
+      .payment-logo {
+        width: 59px;
+        height: auto;
+        margin-right: 10px;
+        border: 1px solid #000; // Black border around the image
+      }
+
+      .payment-name {
+        font-size: 15px;
+      }
+    }
+
+    .payment-checkbox {
+      width: 19px;
+      height: 19px;
+      cursor: pointer;
+    }
+  }
+}
+
+// Media query for responsiveness
+@media (max-width: 768px) {
+  .checkout-page {
+    .container-fluid {
+      padding-top: 3rem;
+
+      .checkout-header {
+        padding-left: 1.5rem;
+      }
+    }
+  }
+}

@@ -14,10 +14,10 @@ const Offer = () => {
       {/* Main Content Section */}
       <div className="container mt-4">
         <div className="row">
-          <CouponCard imageSrc="/images/iconic1.png" couponCode="COUPON 1499"/>
-          <CouponCard imageSrc="/images/iconic2.png" couponCode="COUPON 2499"/>
-          <CouponCard imageSrc="/images/iconic1.png" couponCode="COUPON 3499"/>
-          <CouponCard imageSrc="/images/iconic2.png" couponCode="COUPON 4499"/>
+          <CouponCard imageSrc="/images/order.png" couponCode="COUPON 1499"/>
+          <CouponCard imageSrc="/images/expected1.jpg" couponCode="COUPON 2499"/>
+          <CouponCard imageSrc="/images/expected2.jpg" couponCode="COUPON 3499"/>
+          <CouponCard imageSrc="/images/expected3.jpg" couponCode="COUPON 4499"/>
         </div>
       </div>
 

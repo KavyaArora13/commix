@@ -84,7 +84,7 @@ const Footer = () => {
 
         <div className="footer-column mb-3">
           <h4>Careers</h4>
-          <Link to="/careers">We’re hiring!</Link>
+          <Link to="/career">We’re hiring!</Link>
         </div>
 
         <div className="footer-column mb-3">

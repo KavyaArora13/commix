@@ -5,11 +5,11 @@ import CardComponent from './CardComponent';
 import '../../Assets/Css/ProductPage/ProductGridLayout.scss'
 
 const products = [
-  { id: 1, name: "Allure Cleansing Foam", price: "$50.00", category: "Cleansers", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/iconic1.png` },
-  { id: 2, name: "Allure Vitamin C Serum", price: "$30.00", category: "Serums", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/iconic1.png` },
-  { id: 3, name: "Allure Day Moisturizer", price: "$50.00", category: "Face Moisturizers", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/iconic1.png` },
-  { id: 4, name: "Allure Detox Clay Mask", price: "$50.00", category: "Face Mask", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/iconic1.png` },
-  { id: 5, name: "Allure SPF 30 Sunscreen", price: "$15.00", category: "Sunscreens", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/iconic1.png` },
+  { id: 1, name: "Allure Cleansing Foam", price: "$500.00", category: "Cleansers", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/iconic1.png` },
+  { id: 2, name: "Allure Vitamin C Serum", price: "$30.00", category: "Serums", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/iconic2.png` },
+  { id: 3, name: "Allure Day Moisturizer", price: "$50.00", category: "Face Moisturizers", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/expected1.jpg` },
+  { id: 4, name: "Allure Detox Clay Mask", price: "$50.00", category: "Face Mask", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/expected2.jpg` },
+  { id: 5, name: "Allure SPF 30 Sunscreen", price: "$15.00", category: "Sunscreens", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/expected3.jpg` },
   { id: 6, name: "Kavya", price: "$10.00", category: "Face Mask", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/iconic1.png` },
   { id: 7, name: "Allure Micellar Water", price: "$10.00", category: "Cleansers", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/iconic1.png` },
   { id: 8, name: "Allure Night Cream", price: "$50.00", category: "Face Moisturizers", rating: 4.8, image: `${process.env.PUBLIC_URL}/images/iconic1.png` },
@@ -18,10 +18,10 @@ const products = [
 ];
 
 const bestSellers = [
-  { id: 1, name: "Allure Cleansing Foam", price: "$50.00", image: `${process.env.PUBLIC_URL}/images/iconic2.png`, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-  { id: 2, name: "Allure Vitamin C Serum", price: "$30.00", image: `${process.env.PUBLIC_URL}/images/iconic2.png`, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-  { id: 3, name: "Allure Day Moisturizer", price: "$50.00", image: `${process.env.PUBLIC_URL}/images/iconic2.png`, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-  { id: 4, name: "Allure Matte Lipstick", price: "$40.00", image: `${process.env.PUBLIC_URL}/images/iconic2.png`, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." }
+  { id: 1, name: "Allure Cleansing Foam", price: "$50.00", image: `${process.env.PUBLIC_URL}/images/expected1.jpg`, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+  { id: 2, name: "Allure Vitamin C Serum", price: "$30.00", image: `${process.env.PUBLIC_URL}/images/expected2.jpg`, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+  { id: 3, name: "Allure Day Moisturizer", price: "$50.00", image: `${process.env.PUBLIC_URL}/images/expected3.jpg`, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+  { id: 4, name: "Allure Matte Lipstick", price: "$40.00", image: `${process.env.PUBLIC_URL}/images/expected4.jpg`, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." }
 ];
 
 const itemsPerPage = 9;

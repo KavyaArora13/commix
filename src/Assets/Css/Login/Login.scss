@@ -1,113 +1,392 @@
 .login-page {
-  min-height: 100vh;
+  height: 100vh;
+  background-color: #1f1d2b;
+  display: flex;
   position: relative;
-  color: #ffffff;
   overflow: hidden;
+}
 
-  .background-gif {
+.login-container {
+  position: absolute;
+  width: 350px;
+  height: auto;
+  top: 150px;
+  left: 264px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.brand-logo {
+  width: 100px;
+  position: absolute;
+  height: auto;
+  top: 50px;
+  left: 264px;
+  margin-bottom: 2rem;
+}
+
+.login-form-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.welcome-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.form-group label {
+  color: #ffffff;
+  opacity: 50%;
+  font-size: 0.8rem;
+}
+
+.form-control1 {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  background-color: #ffffff;
+  opacity: 30%;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #a0aec0;
+  cursor: pointer;
+}
+
+.eye-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-check-input {
+  accent-color: #ffd700;
+}
+
+.form-check-label, .forgot-password {
+  font-size: 0.8rem;
+  color: #a0aec0;
+}
+
+.forgot-password {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #7dd3fc;
+  border: none;
+  font-size: 1rem;
+  color: #1f1d2b;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #a0aec0;
+  margin: 1rem 0;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #a0aec0;
+  }
+
+  span {
+    padding: 0 0.5rem;
+  }
+}
+
+.google-signin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #a0aec0;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  gap: 0.5rem;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.login-image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+// Add decorative elements
+.login-page::before,
+.login-page::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(123, 97, 255, 0.2);
+  z-index: 0;
+}
+
+.login-page::before {
+  top: -100px;
+  left: -100px;
+}
+
+.login-page::after {
+  bottom: -100px;
+  right: 50%;
+}
+
+// Add small decorative circles
+@for $i from 1 through 5 {
+  .login-page::before:nth-of-type(#{$i}) {
+    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(123, 97, 255, 0.3);
+    top: random(100) + vh;
+    left: random(50) + vw;
+    z-index: 0;
+  }
+}
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+// Media queries for responsiveness
+@media (max-width: 1920px) {
+  .login-container {
+    width: 350px;
+    top: 150px;
+    left: 13.75%;
   }
 
-  .login-form-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  .brand-logo {
+    top: 50px;
+    left: 13.75%;
+    width: 120px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .login-container {
+    width: 320px;
+    top: 130px;
+    left: 6.94%;
   }
 
-  .login-form {
-    width: 100%;
-    max-width: 400px;
-    background-color: transparent; // Semi-transparent background for form only
-    padding: 2rem;
-    border-radius: 10px;
-  }
-
-  .logo {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #ffd700;
-    margin-bottom: 2rem;
+  .brand-logo {
+    top: 30px;
+    left: 6.94%;
+    width: 100px;
   }
 
   .welcome-text {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
   }
+}
 
-  .subtitle {
-    color: #a0a0a0;
-    margin-bottom: 2rem;
-  }
-
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
-
-  .form-control {
-    background-color: rgba(42, 43, 54, 0.7);
-    border: none;
-    color: #ffffff;
-    padding: 0.75rem;
-  }
-
-  .form-check {
-    display: flex;
-    justify-content: space-between;
+@media (max-width: 1200px) and (min-width: 835px) {
+  .login-page {
+    justify-content: flex-start;
     align-items: center;
   }
 
-  .forgot-password {
-    color: #ffd700;
-    text-decoration: none;
+  .login-container {
+    position: relative;
+    width: 45%;
+    max-width: 400px;
+    top: 0;
+    left: 5%;
+    padding: 2rem;
   }
 
-  .btn-primary {
-    background-color: #ffd700;
-    border: none;
-    color: #1a1b26;
-    padding: 0.75rem;
-    font-weight: bold;
-    margin-top: 1rem;
+  .brand-logo {
+    position: absolute;
+    top: 30px;
+    left: 5%;
+    transform: none;
+    margin-bottom: 2rem;
   }
 
-  .signup-text {
+  .login-form-container {
+    width: 100%;
+  }
+
+  .login-image-container {
+    display: flex;
+    width: 50%;
+    right: 0;
+  }
+}
+
+@media (max-width: 834px) {
+  .login-page {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-container {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+  }
+
+  .brand-logo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2rem;
+  }
+
+  .login-form-container {
+    width: 100%;
+  }
+
+  .login-image-container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .login-container {
+    padding: 1rem;
+  }
+
+  .brand-logo {
+    width: 80px;
+  }
+
+  .welcome-text {
     text-align: center;
-    margin-top: 2rem;
-
-    a {
-      color: #ffd700;
-      text-decoration: none;
-    }
+    font-size: 1.1rem;
   }
 
-  @media (max-width: 767px) {
-    .background-gif {
-      display: none;
-    }
+  .form-control {
+    font-size: 0.8rem;
+  }
 
-    .login-form-container {
-      background-color: #1a1b26;
-    }
+  .login-btn, .google-signin-btn {
+    height: 36px;
+    font-size: 0.9rem;
+  }
+}
 
-    .login-form {
-      background-color: transparent;
-    }
+@media (max-width: 480px) {
+  .login-page {
+    padding: 1rem;
+  }
+
+  .login-container {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .brand-logo {
+    width: 60px;
+  }
+
+  .welcome-text {
+    font-size: 1rem;
+  }
+
+  .form-control {
+    font-size: 0.75rem;
+  }
+
+  .login-btn, .google-signin-btn {
+    height: 32px;
+    font-size: 0.8rem;
   }
 }

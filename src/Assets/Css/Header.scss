@@ -111,6 +111,11 @@
       cursor: pointer;
       border: none;
       min-width: 40px;
+      text-decoration: none;
+
+      .search-icon {
+        color: red !important;
+      }
 
       @media (min-width: 768px) {
         font-size: 17px;
@@ -365,6 +370,6 @@
   }
 
   .social-icon {
-    color: white;
+    color: black;
   }
 }

@@ -29,7 +29,7 @@ const ProductFilters = () => {
             <div className="accordion-body">
               <ul className="list-group">
                 <li className="list-group-item">Skincare</li>
-                <li className="list-group-item">Makeup</li>
+                <li className="list-group-item">Oralcare</li>
                 <li className="list-group-item">Haircare</li>
                 <li className="list-group-item">Bodycare</li>
               </ul>
@@ -59,10 +59,8 @@ const ProductFilters = () => {
           >
             <div className="accordion-body">
               <ul className="list-group">
-                <li className="list-group-item">All Skin Types</li>
                 <li className="list-group-item">Oily</li>
                 <li className="list-group-item">Dry</li>
-                <li className="list-group-item">Combination</li>
               </ul>
             </div>
           </div>

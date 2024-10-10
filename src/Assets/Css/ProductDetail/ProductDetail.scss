@@ -1,6 +1,13 @@
+@import '../variables.scss';
+
+
 .product-detail-page {
     .container {
       margin-top: 50px; // Or any value you prefer
+    }
+
+    .kavya{
+      color: $highlight-color;
     }
   }
   
